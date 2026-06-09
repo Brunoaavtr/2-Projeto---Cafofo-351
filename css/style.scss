@@ -6,3 +6,24 @@
         border-radius: 10px !important;
     };
 }
+.navbar {
+    & .nav-link{
+        color: #ffffff;
+    }
+    & .navbar-toggler {
+        background-color: #ffffff;
+    }
+}
+.nav-item {
+    & .dropdown-item {
+        color: #ffffff;
+    }
+}
+.nav-link .hover{
+    color: aqua;
+}
+.footer {
+    color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
