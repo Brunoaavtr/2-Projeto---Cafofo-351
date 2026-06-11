@@ -1,3 +1,10 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
 .navbar-brand {
     img {
         width: 100px !important;
@@ -22,8 +29,155 @@
 .nav-link .hover{
     color: aqua;
 }
-.footer {
+.apresenta {
+    margin-top: 300px;
+    width: 100%;
+}
+.apresenta h1 {
+    text-align: center;
+    border: 5px solid#F43B74;
+    background-color: #fa5687;
     color: #ffffff;
-    padding: 20px;
+    width: 30%;
+    padding: 30px;
+    border-radius: 30px;
+    margin: auto;
+}
+.intro {
+    margin: 50px auto;
+    margin-top: 150px;
+    border: #fa5687 solid 5px;
+    background-color: #1a1a1a;
     box-sizing: border-box;
+    border-radius: 50px;
+    width: 98%;
+    padding: 15px;
+}
+.h2-intro {
+    margin-left: 3%;
+    border: 5px solid #F43B74;
+    background-color: #fa5687;
+    color: #ffffff;
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+.conteudo-intro{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 3%;
+    color: #ffffff;
+}
+
+.imgi-intro{
+    width: 35%;
+    border: 5px solid #ffffff;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.imgintro{
+    width: 100%;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.texto-intro{
+    width: 60%;
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: justify;
+}
+.icone-card {
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: contain !important;
+    margin: 20px auto !important;
+    display: block !important;
+    background-color: #ffffff;
+    border-radius: 50px;
+
+}
+.card {
+    margin-top: 100px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 5px solid#F43B74 !important;
+    border-radius: 50px;
+}
+.carousel {
+    width: 80%;
+    margin: 150px auto;
+    
+    border: 5px solid #F43B74;
+    border-radius: 20px;
+}
+.carousel-item img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.encerramento {
+    margin: 150px auto;
+    margin-top: 150px;
+    border: #fa5687 solid 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 98%;
+    padding: 15px;
+
+}
+.h2-intro2 {
+    border: 5px solid #F43B74;
+    background-color: #fa5687;
+    color: #ffffff;
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.texto-encerramento {
+    border: 5px solid #ffffff;
+    border-radius: 0px 20px 20px 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 25px;
+
+}
+
+
+
+.footer {
+    width: 100%;
+    color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-social {
+    font-size: 40px;
+    color: white;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.icone-social:hover {
+    color: #F43B74;
+    transform: scale(1.2);
+}
+
+footer a {
+    text-decoration: none;
 }

@@ -7,12 +7,14 @@
 
   <title>Cafofo 351</title>
   <link rel="icon" href="imagens/divulga/logosemfundo.png">
-  <link rel="stylesheet" href="css/style.css">
-
-  <base href="http://localhost/faculdade2/Projeto02/">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 
 </head>
 
@@ -28,10 +30,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="quem">Quem Somos</a>
+            <a class="nav-link" href="home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Quem Somos</a>
+            <a class="nav-link" href="quem">Quem Somos</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,32 +63,40 @@
 
   <main>
     <?php
-      if (isset($_GET["param"])) {
-       $p = explode("/", $_GET["param"]);
-      }
-      $page = $p[0] ?? "home";
+    if (isset($_GET["param"])) {
+      $p = explode("/", $_GET["param"]);
+    }
 
-      $pagina = "paginas/{$page}.php";
+    $page = $p[0] ?? "home";
 
-      //verificar se o arquivo existe
-      if (file_exists($pagina)) {
-        include $pagina;
-      } else {
-        include "paginas/erro.php";
-      }
+    $pagina = "paginas/{$page}.php";
+
+    // verificar se o arquivo existe
+    if (file_exists($pagina)) {
+      include $pagina;
+    } else {
+      include "paginas/erro.php";
+    }
     ?>
   </main>
 
   <footer class="footer" style="background-color: #121212;">
-    
-    <p class="text-center">
-      Desenvolvido por Bruno
-    </p>
+
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/cafofo351" target="_blank">
+        <i class="fa-brands fa-instagram icone-social"></i>
+      </a>
+
+      <a href="https://www.facebook.com/suapagina" target="_blank">
+        <i class="fa-brands fa-facebook icone-social"></i>
+      </a>
+
+      <a href="https://www.instagram.com/brunoaavt/" target="_blank">
+        <i class="fa-solid fa-computer icone-social"></i>
+      </a>
+    </div>
 
   </footer>
-
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="fslightbox.js"></script>
 </body>
 
 </html>
