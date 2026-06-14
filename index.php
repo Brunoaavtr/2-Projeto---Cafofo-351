@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Cafofo 351</title>
-  <link rel="icon" href="imagens/divulga/logosemfundo.png">
+  <title>Covil do Dragão</title>
+  <link rel="icon" href="img/divulga/logo.png">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
 </head>
@@ -22,7 +23,7 @@
   <nav class="navbar navbar-expand-lg" style="background-color: #121212;">
     <div class="container-fluid">
       <a class="navbar-brand" href="home">
-        <img src="imagens/divulga/novalogo2.png" alt="Cafofo351">
+        <img src="img/divulga/logo.png" alt="Cafofo351">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -88,7 +89,7 @@
       </a>
 
       <a href="https://www.facebook.com/suapagina" target="_blank">
-        <i class="fa-brands fa-facebook icone-social"></i>
+        <i class="fa-brands fa-tiktok"></i>
       </a>
 
       <a href="https://www.instagram.com/brunoaavt/" target="_blank">
@@ -97,6 +98,34 @@
     </div>
 
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      const videos = document.querySelectorAll(".video-card");
+
+      const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+            entry.target.play();
+          } else {
+            entry.target.pause();
+          }
+
+        });
+
+      }, {
+        threshold: 0.5
+      });
+
+      videos.forEach(video => {
+        observer.observe(video);
+      });
+
+    });
+  </script>
 </body>
 
 </html>
