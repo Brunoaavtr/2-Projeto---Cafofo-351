@@ -31,27 +31,23 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="home">Home</a>
+            <a class="nav-link" href="home">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="quem">Quem Somos</a>
+            <a class="nav-link" href="informacao">INFORMAÇÕES</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Loja
             </a>
             <ul class="dropdown-menu" style="background-color: #121212;">
-              <li><a class="dropdown-item" href="#">Canecas</a></li>
-              <li><a class="dropdown-item" href="#">Pelucias</a></li>
-              <li><a class="dropdown-item" href="#">Decoração</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Todas as categorias</a></li>
+              <li><a class="dropdown-item" href="#">Cranios</a></li>
+              <li><a class="dropdown-item" href="#">Filhotes</a></li>
+              <li><a class="dropdown-item" href="#">Estatuas</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="contato">Contato</a>
           </li>
         </ul>
         <form class="d-flex" role="search">

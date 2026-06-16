@@ -1,48 +1,78 @@
-body{
+body {
     background-color: #282727;
     font-family: 'Cinzel', serif;
 }
+
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
+    box-shadow: 0 0 5px #ff8800;
+
 }
+
 .navbar-brand {
     img {
         width: 100px !important;
-        border: 4px solid #ce5200!important;
+        border: 1px solid #ff8800 !important;
         border-radius: 10px !important;
+        background-color: #301918;
     }
 }
+
 .navbar {
-    & .nav-link{
+    & .nav-link {
         color: #ffffff;
-         transition: all 0.3s ease;
+        transition: all 0.3s ease;
     }
+
     & .navbar-toggler {
         background-color: #ffffff;
     }
 }
-.navbar .nav-link:hover{
-    color: #ce5200;
+
+.navbar .nav-link:hover {
+    color: #ff8800;
+    transform: scale(1.50);
+    margin: auto 30px;
+    text-decoration: underline 1px;
+    text-decoration-color: #ff8800;
 }
+
+/*aqui começa lista loja nabar*/
 .nav-item {
     & .dropdown-item {
         color: #ffffff;
     }
 }
+
+.dropdown-item:hover {
+    background-color: #ff8800;
+}
+
+.nav-link.dropdown-toggle.show {
+    color: #ff8c00 !important;
+    transform: scale(1.50);
+    margin: auto 30px;
+}
+
+/*aqui termina lista loja navbar
+  aqui termina o nav bar
+  aqui começa o home e o carousel*/
 .imagem-backgraund {
     width: 100%;
     height: 60%;
 }
+
 .carousel {
     width: 100%;
     margin: 150px auto;
     border: 5px solid #121212;
     border-radius: 20px;
 }
+
 .carousel-item img {
     height: 550px;
     width: 100%;
@@ -50,6 +80,7 @@ body{
     border-radius: 15px;
     filter: saturate(70%) brightness(30%);
 }
+
 .carousel .btn {
     background-color: #ff8800;
     border: solid 1px #64141C;
@@ -58,6 +89,7 @@ body{
     transition: all 0.3s ease;
 
 }
+
 .carousel .btn:hover {
     transform: scale(1.05);
     box-shadow:
@@ -65,15 +97,20 @@ body{
         0 0 10px #f06c20,
         0 0 20px #ff4d00;
 }
-.carousel .carousel-indicators button{
+
+.carousel .carousel-indicators button {
     background-color: #ff8800;
     transition: all 0.3s ease;
 }
+
 .carousel .carousel-indicators button:hover {
     background-color: #64141C;
     transform: scale(1.50);
     margin: 0 20px;
 }
+
+/*aqui termina o crsl
+aqui começa video card*/
 .video-card {
     width: 260px;
     height: 520px;
@@ -94,6 +131,7 @@ body{
         0 0 10px #ff8800,
         0 0 20px #ff4d00;
 }
+
 .btn-segue button {
     background-color: #ff8800;
     border: solid 1px #64141C;
@@ -105,6 +143,7 @@ body{
     margin: auto;
 
 }
+
 .btn-segue button:hover {
     transform: scale(1.05);
     box-shadow:
@@ -112,9 +151,12 @@ body{
         0 0 10px #f06c20,
         0 0 20px #ff4d00;
 }
+
 .btn-segue a {
     text-decoration: none;
 }
+
+/*aqui termina video card*/
 .intro-home {
     margin: 50px auto;
     margin-top: 150px;
@@ -124,27 +166,32 @@ body{
     width: 98%;
     padding: 15px;
 }
-.conteudo-intro-home{
+
+.conteudo-intro-home {
     display: flex;
     align-items: flex-start;
     gap: 30px;
     margin-left: 3%;
     color: #ffffff;
 }
-.imgi-intro-home{
+
+.imgi-intro-home {
     width: 35%;
     border-radius: 20px;
 }
-.imgintro-home{
+
+.imgintro-home {
     width: 100%;
     border-radius: 10px;
 }
-.texto-intro-home{
+
+.texto-intro-home {
     width: 60%;
     margin-top: 50px;
     font-size: 25px;
     text-align: justify;
 }
+
 .card-dragon {
     position: relative;
     overflow: hidden;
@@ -171,7 +218,7 @@ body{
     text-align: center;
     color: white;
 
-    background: rgba(0,0,0,.35);
+    background: rgba(0, 0, 0, .35);
 }
 
 .card-overlay h2 {
@@ -201,82 +248,44 @@ body{
     transform: scale(1.08);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*aqui termina home */
+/*pagina informação*/
 .apresenta {
     margin-top: 300px;
     width: 100%;
 }
+
 .apresenta h1 {
     text-align: center;
-    border: 5px solid#00c448;
-    background-color: #fa5687;
+
+    background-color: #ff8800;
     color: #ffffff;
-    width: 30%;
+    width: 40%;
     padding: 30px;
     border-radius: 30px;
     margin: auto;
 }
+
 .intro {
     margin: 50px auto;
     margin-top: 150px;
-    border: #fa5687 solid 5px;
-    background-color: #1a1a1a;
+    background-color: #301918;
     box-sizing: border-box;
     border-radius: 50px;
     width: 98%;
     padding: 15px;
 }
+
 .h2-intro {
     margin-left: 3%;
-    border: 5px solid #F43B74;
-    background-color: #fa5687;
+    background-color: #ff8800;
     color: #ffffff;
     width: 30%;
     padding: 10px;
     border-radius: 20px 20px 0px 0px;
 }
-.conteudo-intro{
+
+.conteudo-intro {
     display: flex;
     align-items: flex-start;
     gap: 30px;
@@ -284,78 +293,132 @@ body{
     color: #ffffff;
 }
 
-.imgi-intro{
+.imgi-intro {
     width: 35%;
-    border: 5px solid #ffffff;
     border-radius: 0px 20px 20px 20px;
 }
 
-.imgintro{
+.imgintro {
     width: 100%;
     border-radius: 0px 20px 20px 20px;
 }
 
-.texto-intro{
+.texto-intro {
     width: 60%;
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 25px;
     text-align: justify;
 }
+
 .icone-card {
     width: 150px !important;
     height: 150px !important;
     object-fit: contain !important;
     margin: 20px auto !important;
+    padding: 10px;
     display: block !important;
-    background-color: #ffffff;
+    background-color: #ff8800;
     border-radius: 50px;
 
 }
+
 .card {
     margin-top: 100px;
     background-color: #1a1a1a;
     color: #ffffff;
-    border: 5px solid#F43B74 !important;
     border-radius: 50px;
 }
-.encerramento {
-    margin: 150px auto;
+
+/*aqui termina informação*/
+
+
+.secao-newsletter {
+    background-color:#301918;
+    padding: 60px 0;
+    color: white;
+}
+
+.titulo-newsletter {
+    font-size: 3rem;
     margin-top: 150px;
-    border: #121212 solid 5px;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    box-sizing: border-box;
-    border-radius: 50px;
-    width: 98%;
+}
+
+.texto-newsletter {
+    margin: 15px 0;
+}
+.secao-contato {
+    background-color: #282727;
+    color: white;
+}
+
+.titulo-contato {
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+.formulario-contato {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.campo-contato {
+    width: 100%;
     padding: 15px;
-
-}
-.h2-intro2 {
-    border: 5px solid #F43B74;
-    background-color: #fa5687;
-    color: #ffffff;
-    width: 30%;
-    padding: 10px;
-    border-radius: 20px 20px 0px 0px;
-
-}
-.texto-encerramento {
-    border: 5px solid #ffffff;
-    border-radius: 0px 20px 20px 20px;
-    box-sizing: border-box;
-    padding: 20px;
-    font-size: 25px;
-
+    background: transparent;
+    border: 1px solid #ff8800;
+    border-radius: 5px;
+    color: white;
 }
 
+.campo-contato::placeholder {
+    color: rgba(255,255,255,.7);
+}
+
+.campo-contato:focus {
+    outline: none;
+    border-color: #ff8c00;
+}
+
+.mensagem-contato {
+    min-height: 250px;
+    resize: none;
+}
+
+.texto-recaptcha {
+    font-size: 0.9rem;
+    color: #cfcfcf;
+}
+
+.botao-enviar-mensagem {
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+     transition: .3s;
+}
+
+.botao-enviar-mensagem:hover {
+    transform: scale(1.10);
+}
 
 
+
+
+
+
+
+
+
+/*aqui começa o footer*/
 .footer {
     width: 100%;
     color: #ffffff;
     padding: 15px;
     box-sizing: border-box;
-    margin-top: auto;
+    margin-top: 50px;
 }
 
 .redes-sociais {
@@ -364,14 +427,16 @@ body{
     align-items: center;
 }
 
-.fa-brands, .fa-solid {
+.fa-brands,
+.fa-solid {
     font-size: 40px;
     color: white;
     margin: 0 15px;
     transition: 0.3s;
 }
 
-.fa-brands:hover, .fa-solid:hover {
+.fa-brands:hover,
+.fa-solid:hover {
     color: #ff8800;
     transform: scale(1.2);
 }
@@ -379,3 +444,5 @@ body{
 footer a {
     text-decoration: none;
 }
+
+/*aqui termina o footer*/
