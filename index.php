@@ -41,9 +41,9 @@
               Loja
             </a>
             <ul class="dropdown-menu" style="background-color: #121212;">
-              <li><a class="dropdown-item" href="#">Cranios</a></li>
-              <li><a class="dropdown-item" href="#">Filhotes</a></li>
-              <li><a class="dropdown-item" href="#">Estatuas</a></li>
+              <li><a class="dropdown-item" href="cranios">Cranios</a></li>
+              <li><a class="dropdown-item" href="filhotes">Filhotes</a></li>
+              <li><a class="dropdown-item" href="estatuas">Estatuas</a></li>
             </ul>
           </li>
           <li class="nav-item">

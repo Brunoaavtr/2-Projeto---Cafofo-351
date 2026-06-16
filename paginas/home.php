@@ -113,12 +113,12 @@
     <div class="row g-4">
 
         <div class="col-md-4">
-            <div class="card-dragon">
+            <div class="card-dragao">
                 <img src="img/craniocarax.webp" alt="cranio">
-                <div class="card-overlay">
-                    <p>Subtítulo</p>
+                <div class="card-info">
+                    <p>Cranios</p>
                     <h2>"CINZAS E OSSOS"</h2>
-                    <a href="#" class="btn btn-comprar">
+                    <a href="cranios" class="btn btn-comprar">
                         COMPRE AGORA
                     </a>
                 </div>
@@ -126,12 +126,12 @@
         </div>
 
         <div class="col-md-4">
-            <div class="card-dragon">
+            <div class="card-dragao">
                 <img src="img/meleysovo.webp" alt="mo">
-                <div class="card-overlay">
-                    <p>Subtítulo</p>
+                <div class="card-info">
+                    <p>Estatuas de Filhotes</p>
                     <h2>"NASCIDO DO FOGO"</h2>
-                    <a href="#" class="btn btn-comprar">
+                    <a href="filhotes" class="btn btn-comprar">
                         COMPRE AGORA
                     </a>
                 </div>
@@ -139,12 +139,12 @@
         </div>
 
         <div class="col-md-4">
-            <div class="card-dragon">
+            <div class="card-dragao">
                 <img src="img/drogon.webp" alt="drogon">
-                <div class="card-overlay">
-                    <p>Subtítulo</p>
+                <div class="card-info">
+                    <p>Estatuas de Dragões</p>
                     <h2>"SENHORES DA CHAMA"</h2>
-                    <a href="#" class="btn btn-comprar">
+                    <a href="estatuas" class="btn btn-comprar">
                         COMPRE AGORA
                     </a>
                 </div>

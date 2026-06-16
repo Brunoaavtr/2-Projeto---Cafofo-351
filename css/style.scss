@@ -192,41 +192,39 @@ aqui começa video card*/
     text-align: justify;
 }
 
-.card-dragon {
+.card-dragao {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
     height: 750px;
 }
 
-.card-dragon img {
+.card-dragao img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform .5s ease;
 }
 
-.card-overlay {
+.card-info {
     position: absolute;
     inset: 0;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-
     text-align: center;
     color: white;
-
     background: rgba(0, 0, 0, .35);
+    padding-bottom: 40px; 
 }
 
-.card-overlay h2 {
+.card-info h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.card-overlay p {
+.card-info p {
     margin-bottom: 5px;
 }
 
@@ -329,8 +327,8 @@ aqui começa video card*/
     border-radius: 50px;
 }
 
-/*aqui termina informação*/
-
+/*aqui termina informação
+  aqui começa contato*/
 
 .secao-newsletter {
     background-color:#301918;
@@ -403,15 +401,22 @@ aqui começa video card*/
 .botao-enviar-mensagem:hover {
     transform: scale(1.10);
 }
+/*Aqui termina contato*/
+.secao-loja {
+    background-color:#301918;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+}
 
+.titulo-loja {
+    font-size: 3rem;
+    margin-top: 150px;
+}
 
-
-
-
-
-
-
-
+.texto-loja {
+    margin: 15px 0;
+}
 /*aqui começa o footer*/
 .footer {
     width: 100%;
